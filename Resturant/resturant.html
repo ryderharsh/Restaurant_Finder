@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="resturant.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<title>Bangalore Restaurant</title>
+</head>
+<body>
+	<section class="head">
+
+		<h1>Food Company</h1>
+	</section>
+
+	<section class="main">
+		<section id="first_box"></section>
+		<section id="inner_box">
+			<h1 id="rname"></h1>
+			<p id="rate"></p>
+			<section id="share">
+			<a href="#" class="myButton">Share</a>
+			</section>
+			<section id="like">
+			<a href="#" class="myButton">Like</a>
+		</section>
+		
+		</section>
+		<hr>
+		<section id="inner_box2">
+			<p>Cost for 2</p>
+			<h1 id="cost"></h1>
+			<p>Address:</p>
+			<h1 id="address"></h1>
+		</section>
+		<hr>
+		<section id="inner_box3">
+			
+<div style="text-align:center">
+  <h2>Photos</h2>
+  <p>Click on the images below:</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="Best-Restaurant.jpeg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="sea.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Best-Restaurant.jpeg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="sea.jpg" style="width:100%" onclick="myFunction2();">
+  </div>
+</div>
+<div class="container">
+	  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	  <img id="expandedImg" style="width:100%">
+	  <div id="imgtext"></div>
+	</div>
+
+<section id="myDIV">
+	<div class="row">
+	  <div class="column">
+	    <img src="home.jpg" style="width:100%; height: 130px;" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+	    <img src="noble.jpg" style="width:100%; height: 130px;" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+	    <img src="home.jpg" style="width:100%; height: 130px;" onclick="myFunction(this);">
+	  </div>
+	  <div class="column">
+	    <img src="noble.jpg" style="width:100%; height: 130px;" onclick="myFunction(this);">
+	  </div>
+	</div>
+
+	<div class="container">
+	  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+	  <img id="expandedImg" style="width:100%">
+	  <div id="imgtext"></div>
+	</div>
+	<hr>
+</section>
+
+		</section>
+		<section id="inner_box4">
+		<h2 class="menu">Menu</h2>
+		<section id="menu_inner">
+				
+			</section>
+		</section>
+		<hr>
+		<section id="inner_box5">
+		<h2>Ratings</h2>
+	</section>
+<script>
+	function myFunction2() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+	}
+
+	function myFunction(imgs) {
+	  var expandImg = document.getElementById("expandedImg");
+	  var imgText = document.getElementById("imgtext");
+	  expandImg.src = imgs.src;
+	  imgText.innerHTML = imgs.alt;
+	  expandImg.parentElement.style.display = "block";
+	}
+</script>
+<script type="text/javascript" src="details.js"></script>
+</body>
+</html>
