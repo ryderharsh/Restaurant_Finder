@@ -1,0 +1,85 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #d0d0d0;
+	font-family: 'Oxygen', sans-serif;
+}
+.head{
+	width: 100%;
+	height: 15%;
+	background-color: white;
+	margin-top: -15px;
+	box-shadow: 0px 10px #b0b0b0;
+}
+.head h1{
+	color: #c7c7c7;
+	margin-left: 2%;
+	padding-top: 18px;
+
+}
+
+.img-response {
+	float: left;
+	width: 250px;
+	height: 170px;
+	background: white;
+	margin-top: 45px;
+	margin-left: 80px;
+	margin-bottom: 45px;
+	border-radius: 10px;
+}
+
+.container{
+	width: 136%;
+	height: auto;
+	background-color: #2E8B57;
+	margin-left:30%;
+
+}
+.h11 h1{
+	margin-top: 40%;
+	color: grey;
+	font-size: 30px;
+}
+.bigmain{
+	position: absolute;
+	margin-top: -1.4%;
+}
+
+.innercontainer{
+	float: left;
+	margin-top: 6%;
+	margin-left: 5%;
+
+}
+hr{
+	margin-top: 25%;
+	margin-right: auto;
+	width: 90%;
+	margin-left: 5%;
+}
+.myButton {
+	padding-left: 550px;
+}
+.myButton a{
+	background-color:#44c767;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:1px solid #18ab29;
+	margin-left: 30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:11px 16px;
+	text-decoration:none;
+	text-shadow:0px 0px 20px #2f6627;
+}
+.myButton a:hover{
+	background-color: d0d0d0;
+}
+.myButton a.onpage{
+	background-color: d0d0d0;
+}

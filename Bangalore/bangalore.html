@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bangalore.css">
+	<title>Bangalore Restaurant</title>
+	<script type="text/javascript">
+			function changePage()
+			{
+				var getPageUrl=new URL(window.location.href);
+				console.log(getPageUrl)
+				var getPage=parseInt(getPageUrl.searchParams.get("page"))
+				var cityId=parseInt(getPageUrl.searchParams.get("id"))
+				location.replace(`?id=${cityId}&page=${getPage+1}`)
+			}
+		</script>
+</head>
+<body>
+<section class="head">
+	<h1>Food Company</h1>
+</section>
+	<main class="bigmain" id="bigmain">
+	<div class="container" id="list">
+		<center><h1 class="h11">Showing list restaurants in your city!</h1></center>
+	</div>
+	<section class="myButton">
+		
+	</section>
+	
+</main>
+<script src="city.js"></script>
+</body>
+<script type="text/javascript">
+					var getPageUrl=new URL(window.location.href);
+	var getPage=parseInt(getPageUrl.searchParams.get("page"))
+	document.getElementById('1').classList.remove("option");
+	document.getElementById('2').classList.remove("option");
+	document.getElementById('3').classList.remove("option");
+	document.getElementById(''+getPage).classList.add("option");
+
+</script>
+</html>
